@@ -1,0 +1,114 @@
+<!-- An HTML form is used to collect user input. The user input is most often sent to a server
+     for processing. 
+    <form action ="/signup"  method ="get" > this tells where the data should go
+    -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- After hitting submit it will take to the google -->
+    <form action="https://www.google.com/" >
+        <input type="text">
+        <button>Submit</button>
+    </form>
+
+<!-- Name Attribute: Its a way to provide a name to data in every field
+This is go to https://www.google.com/?username=Pragati -->
+
+<h3>New form</h3>
+<form action ="https://www.google.com/">
+    <input type="text" name="username">
+    <input type="text">
+    <button>Submit</button>
+</form>
+
+<h4>Playaround with google form action</h4>
+<h3>New form</h3>
+<form action ="https://www.google.com/search">  
+    <input type="text" name="q">   <!---Google use qa in their name-->
+    <button>Submit</button>
+    </form>
+    <br>
+
+<!--
+    Forms Example
+-->
+
+<form>
+    <input type="text" name="Firstname" placeholder="Eneter Your Name">
+    <input type ="text" name="SecondName" placeholder="Enter your second name">
+    <button>Submit</button>
+</form>
+
+<h1>Labels in HTML and FOR Attribute</h1>
+<!-- Connect the label to that field , here comes use of FOR attribute -->
+
+<form>
+    <label for="first">Username or email</label>
+    <input type="text" name="Firstname" placeholder="Eneter Your Name" id="first">
+    <input type ="text" name="SecondName" placeholder="Enter your second name">
+    <button>Submit</button>
+</form>
+
+
+<h1>Other types of Input and Required</h1>
+<form>
+    <label for="email1">Eneter your email</label>
+    <input type="email" name="email" id="email1">
+    <label for ="pswd">Enter password</label>
+    <input type="password" name="password" id="pswd" placeholder ="Password" required>
+    <button>Submit</button>
+</form>
+
+<H1>Checkbox</H1>
+<form>
+    <textarea rows="10" cols="10"> </textarea>
+    <label>Enter the number</label>
+    <input type ="number" min="0" max="10" >
+    <input type ="range" min="0" max="10" >
+    <label for="c">I aggree to the therms and condition </label>
+    <input type ="checkbox" id="c" name="checkbox" >  <!--Sent on in URL  if it is checked-->
+    <button>Submit</button>
+</form>
+
+
+<H4>Select in FORMs</H4>
+
+<!-- In url : http://127.0.0.1:5500/forms.html?country=uk   -->
+<form>
+   <label for="cn">Select your Country</label>
+   <select name="country" id="cn">
+    <option value="uk">UK</option> 
+    <option value="usa">USa</option>     
+    <option value="in">INDIA</option>     
+   </select>
+   <button>Submit</button>
+</form>
+</body>
+</html>
+
+<H1>Radio Button</H1> 
+<!-- MAke the name same in input  -->
+<form>
+    <label for="m">Male</label>
+    <input type="radio" name="gender" id="m" value="male">
+    <label>Female</label>
+    <input type="radio" name="gender" id="f" value="female">
+    <button>Submit</button>
+</form>
+
+<form>
+    <label for="m">Male</label>
+    <input type="checkbox" name="gender" id="m" value="male">
+    <label>Female</label>
+    <input type="checkbox" name="gender" id="f" value="female">
+    <button>Submit</button>
+</form>
+ 
